@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>上海粮油学会粮油信息追溯平台</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lanrenzhijia.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/det.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="det-head">
+    <div class="container">
+        <h2>上海粮油学会粮油信息追溯平台</h2>
+    </div>
+</div>
+
+
+<div class="det-con">
+    <div class="container">
+        <div class="det-tit">商品详情信息</div>
+        <div class="row">
+            <div class="col-xs-5 det-list">
+                <strong>商品条码:</strong>
+                <span>06953781200340</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>商品名称:</strong>
+                <span>东北珍珠米</span>
+            </div>
+             <div class="col-xs-5 det-list">
+                <strong>发布厂家:</strong>
+                <span>光明米业(集团)</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>英文名称:</strong>
+                <span>dongbeizhen</span>
+            </div>
+             <div class="col-xs-5 det-list">
+                <strong>规格型号:</strong>
+                <span>10kg编织袋</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>产品分类:</strong>
+                <span>502211</span>
+            </div>
+             <div class="col-xs-5 det-list">
+                <strong>高度:</strong>
+                <span>590毫米</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>宽度:</strong>
+                <span>300毫米</span>
+            </div>
+             <div class="col-xs-5 det-list">
+                <strong>深度:</strong>
+                <span>80毫米</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>原产地:</strong>
+                <span>中国</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>上市时间:</strong>
+                <span>2017-03-20</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>商品描述:</strong>
+                <span>无</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>追溯编号:</strong>
+                <span>1490078538890</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>数量:</strong>
+                <span>200</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>生成日期:</strong>
+                <span>2017-03-28</span>
+            </div>
+            <div class="col-xs-5 det-list">
+                <strong>保质期:</strong>
+                <span>12月</span>
+            </div>
+        </div>
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+                <tbody>
+                <tr>
+                    <th>流通环节</th>
+                    <th>供应商名称</th>
+                    <th>品名</th>
+                    <th>数量</th>
+                    <th>单位</th>
+                    <th>编号</th>
+                    <th>加工工艺</th>
+                </tr>
+                <tr>
+                    <td>种子</td>
+                    <td>粮通集团</td>
+                    <td>大米种子</td>
+                    <td>500</td>
+                    <td>袋</td>
+                    <td>10011</td>
+                    <td>筛选</td>
+                </tr>
+                <tr>
+                    <td>加工</td>
+                    <td>上海天友食品厂</td>
+                    <td>加工</td>
+                    <td>100</td>
+                    <td>包</td>
+                    <td>10012</td>
+                    <td>加工</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scrollspy.js"></script>
+</body>
+</html>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $('.theme-login').click(function () {
+            $('.theme-popover-mask').fadeIn(100);
+            $('.theme-popover').slideDown(200);
+        })
+        $('.theme-poptit .close').click(function () {
+            $('.theme-popover-mask').fadeOut(100);
+            $('.theme-popover').slideUp(200);
+        })
+
+    });
+
+
+    if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+        var version = parseFloat(RegExp.$1);
+        if (version > 2.3) {
+            var phoneScale = parseInt(window.screen.width) / 1100;
+            document.write('<meta name="viewport" content="width=1100, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+        } else {
+            document.write('<meta name="viewport" content="width=1100, target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=1100, user-scalable=yes, target-densitydpi=device-dpi">');
+    }
+</script>
